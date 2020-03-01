@@ -33,6 +33,12 @@ class Chat extends React.PureComponent {
         });
     };
 
+    handleKeyDown = e => {
+        if (e.keyCode === 13) {
+            this.sendMessage();
+        }
+    };
+
     sendMessage = () => {
         const { dispatch } = this.props;
 
@@ -87,7 +93,14 @@ class Chat extends React.PureComponent {
                     </div>
                 </div>
                 <div className={s.messenger}>
-                    <input autoFocus className={s.input} type="text" onChange={this.handleChange} value={this.state.message} />
+                    <input
+                        autoFocus
+                        className={s.input}
+                        type="text"
+                        onChange={this.handleChange}
+                        value={this.state.message}
+                        onKeyDown={this.handleKeyDown}
+                    />
                     <span className={s.attach}/>
                     <button onClick={this.sendMessage} className={s.button} type="button" />
                     {sendingMessage ? <Loader /> : null}
