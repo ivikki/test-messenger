@@ -1,0 +1,8 @@
+{
+    "DEBUG": false,
+    "production": false,
+    "clientTimeFormat": "D MMMM YYYY",
+    "serviceUrl": "http://82.117.249.182:9192",
+    "websiteUrl": "setup url for ui",
+    "apiPath": "/api"
+}

@@ -1,0 +1,158 @@
+.wrapper {
+
+  .holder{
+    position: relative;
+  }
+
+  .frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  .header {
+    background-color: #001AFF;
+    height: 85px;
+    padding: 18px 25px;
+
+    .back {
+      position: absolute;
+      display: block;
+      background: url("./back.svg") no-repeat;
+      width: 30px;
+      height: 30px;
+      top: 31px;
+      left: 25px;
+      cursor: pointer;
+    }
+
+    .name {
+      color: white;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 21px;
+      position: relative;
+      display: inline-block;
+      padding-left: 70px;
+      margin-left: 78px;
+
+      &:before, {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url("./avatar.svg") no-repeat;
+        width: 56px;
+        height: 56px;
+        top: -15px;
+        left: 0;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url("./online.png") no-repeat;
+        width: 23px;
+        height: 23px;
+        top: 19px;
+        left: 36px;
+      }
+    }
+  }
+
+  .chat {
+    height: 394px;
+    padding: 21px;
+    overflow-y: auto;
+
+    .message {
+      display: flex;
+      justify-content: start;
+      margin-bottom: 12px;
+      align-items: center;
+      max-width: 80%;
+      overflow: hidden;
+
+      .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #C4C4C4;
+        margin-right: 8px;
+      }
+    }
+
+    .text {
+      color: #222222;
+      padding: 0 16px;
+      background-color: #DCDCDC;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: bold;
+    }
+
+    .myMessage {
+      margin-bottom: 12px;
+      float: right;
+      max-width: 80%;
+      overflow: hidden;
+
+      .text {
+        background-color: #001AFF;
+        padding: 2px 16px;
+        color: white;
+      }
+    }
+
+    .clear {
+      clear: both;
+    }
+  }
+
+  .messenger {
+    height: 138px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+    position: relative;
+
+    .input {
+      width: 334px;
+      border: none;
+      outline: none;
+      padding: 20px 70px 20px 15px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 16px;
+      color: #3E3E3E;
+    }
+
+    .attach {
+      position: absolute;
+      display: block;
+      background: url("./attach.png") no-repeat;
+      width: 18px;
+      height: 30px;
+      top: 18px;
+      right: 72px;
+      cursor: pointer;
+    }
+
+    .button {
+      position: absolute;
+      display: block;
+      background: url("./button.png") no-repeat;
+      width: 27px;
+      height: 24px;
+      top: 18px;
+      right: 22px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+  }
+}
