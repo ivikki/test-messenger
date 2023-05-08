@@ -10,7 +10,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "5.0.1",
     "redux-devtools-extension": "^2.13.8",
     "storeon": "^0.9.8"
   },
